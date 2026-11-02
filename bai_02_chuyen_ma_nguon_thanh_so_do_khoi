@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int N;
+    scanf("%d",&N);
+    int n=0;
+    if(N < 2){
+        printf("N khong la so nguyen to");
+    }
+    for(int i=2;i<=sqrt(N);i++){
+        if(N % i == 0) {
+            N++;
+        }
+    }
+    if(n==0)
+        printf("N la so nguyen to");
+    else
+        printf("N khong la so nguyen to");
+    return 0;
+}
