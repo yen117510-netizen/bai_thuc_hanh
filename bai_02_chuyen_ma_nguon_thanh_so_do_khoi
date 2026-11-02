@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int k;
+    scanf("%d",&k);
+    int n=0;
+    if(k<2){
+        printf("k khong la so nguyen to");
+    }
+    for(int i=2;i<=sqrt(k);i++){
+        if(k%i==0){
+            k++;
+        }
+    }
+
+
+    if(n==0)
+        printf("k  la so nguyen to");
+    else
+        printf("k khong la so nguyen to");
+
+
+    return 0;
+}
